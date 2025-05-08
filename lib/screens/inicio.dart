@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import '../cuenta.dart';
-import '../gestion_servicios.dart';
-import '../gestion_usuarios.dart';
-import '../gestion_consultas.dart';
-import '../configuracion_web.dart';
-import '../dashboard.dart';
+import 'cuenta.dart';
+import 'gestion_servicios.dart';
+import 'gestion_usuarios.dart';
+import 'gestion_consultas.dart';
+import 'configuracion_web.dart';
+import 'dashboard.dart';
 import '../widgets/main_button.dart';
 import '../utils/colors.dart';
 
