@@ -6,15 +6,13 @@ import '../gestion_consultas.dart';
 import '../configuracion_web.dart';
 import '../dashboard.dart';
 import '../widgets/main_button.dart';
+import '../utils/colors.dart';
 
 class InicioScreen extends StatelessWidget {
   const InicioScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const Color rosaOscuro = Color(0xFFB24096);
-    const Color rosaClaro = Color(0xFFFF75DD);
-
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -44,7 +42,7 @@ class InicioScreen extends StatelessWidget {
                     child: const Text(
                       'Mi cuenta',
                       style: TextStyle(
-                        color: rosaOscuro,
+                        color: AppColors.rosaOscuro,
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
                       ),
@@ -61,7 +59,7 @@ class InicioScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
-                  color: rosaOscuro,
+                  color: AppColors.rosaOscuro,
                 ),
               ),
 
@@ -113,7 +111,7 @@ class InicioScreen extends StatelessWidget {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: rosaClaro,
+                    backgroundColor: AppColors.rosaClaro,
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),

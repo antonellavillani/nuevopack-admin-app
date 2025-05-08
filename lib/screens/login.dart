@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
+import '../utils/colors.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // Colores
-    const Color rosaClaro = Color(0xFFFF75DD);
-    const Color rosaOscuro = Color(0xFFB24096);
-    const Color amarillo = Color(0xFFFFE669);
-
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
@@ -32,7 +28,7 @@ class LoginScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w500,
-                  color: rosaOscuro,
+                  color: AppColors.rosaOscuro,
                 ),
               ),
               const SizedBox(height: 10),
@@ -43,7 +39,7 @@ class LoginScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: rosaOscuro,
+                  color: AppColors.rosaOscuro,
                 ),
               ),
               const SizedBox(height: 40),
@@ -52,7 +48,7 @@ class LoginScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(24),
                 decoration: BoxDecoration(
-                  color: rosaClaro.withOpacity(0.1),
+                  color: AppColors.rosaClaro.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Column(
@@ -84,7 +80,7 @@ class LoginScreen extends StatelessWidget {
                           Navigator.pushNamed(context, '/inicio');
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: rosaOscuro,
+                          backgroundColor: AppColors.rosaOscuro,
                           padding: const EdgeInsets.symmetric(vertical: 16),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),

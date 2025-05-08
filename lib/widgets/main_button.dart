@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../utils/colors.dart';
 
 class MainButton extends StatelessWidget {
   final String label;
@@ -9,7 +10,7 @@ class MainButton extends StatelessWidget {
     super.key,
     required this.label,
     required this.screen,
-    this.color = const Color(0xFFB24096),
+    this.color = AppColors.rosaOscuro,
   });
 
   @override
